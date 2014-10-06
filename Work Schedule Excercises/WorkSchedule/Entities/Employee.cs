@@ -11,15 +11,19 @@ namespace WorkSchedule.Entities
     {
         [Key]
         public int EmployeeID { get; set; }
+
         [Required(ErrorMessage = "FirstName is required.")]
-        [Range(1, 50, ErrorMessage = "FirstName must be between 1 to 50 characters.")]
+        [StringLength(50, MinimumLength = 1, ErrorMessage = "FirstName must be between 1 to 50 characters.")]
         public String FirstName { get; set; }
+
         [Required(ErrorMessage = "LastName is required.")]
-        [Range(1, 50, ErrorMessage = "LastName must be between 1 to 50 characters.")]
+        [StringLength(50,MinimumLength=1, ErrorMessage = "LastName must be between 1 to 50 characters.")]
         public String LastName { get; set; }
+
         [Required(ErrorMessage = "HomePhone is required.")]
-        [Range(1, 12, ErrorMessage = "HomePhone must be between 1 to 12 digits.")]
+        [RegularExpression(@"[1-9][0-9][0-9][0-9].[[0-9][0-9][0-9].[0-9][0-9][0-9][0-9]")]
         public String HomePhone { get; set; }
+
         [Required(ErrorMessage = "Active is required.")]
         public Boolean Active { get; set; }
 

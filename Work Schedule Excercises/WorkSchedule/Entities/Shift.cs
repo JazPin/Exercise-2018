@@ -12,11 +12,11 @@ namespace WorkSchedule.Entities
         [Key]
         public int ShiftID { get; set; }
         [Required(ErrorMessage = "StartTime is required.")]
-        public DateTime StartTime { get; set; }
-        public DateTime EndTime { get; set; }
-        public int DayOfWeek { get; set; }
-        public int MinEmployees { get; set; }
-        public int MaxEmployees { get; set; }
+        public TimeSpan StartTime { get; set; }
+        public TimeSpan? EndTime { get; set; }
+        public Byte? DayOfWeek { get; set; }
+        public Byte? MinEmployees { get; set; }
+        public Byte? MaxEmployees { get; set; }
         [Required(ErrorMessage = "LocationID is required.")]
         public int LocationID { get; set; }
 

@@ -17,7 +17,7 @@ namespace WorkSchedule.Entities
         public int EmployeeID { get; set; }
         [Required(ErrorMessage = "Location ID is required.")]
         public int LocationID { get; set; }
-        public DateTime Day { get; set; }
+        public DateTime? Day { get; set; }
 
         public virtual EmployeeLocation EmployeeLocation { get; set; }
         public virtual Shift Shift { get; set; }
