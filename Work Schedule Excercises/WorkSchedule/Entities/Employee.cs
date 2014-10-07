@@ -9,6 +9,10 @@ namespace WorkSchedule.Entities
 {
     public class Employee
     {
+        public Employee()
+        {
+            Active = true;
+        }
         [Key]
         public int EmployeeID { get; set; }
 
