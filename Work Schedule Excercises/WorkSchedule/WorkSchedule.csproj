@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DLL\WorkScheduleContext.cs" />
+    <Compile Include="DAL\WorkScheduleContext.cs" />
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\EmployeeLocation.cs" />
     <Compile Include="Entities\Location.cs" />
