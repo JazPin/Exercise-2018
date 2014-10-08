@@ -25,7 +25,7 @@ namespace WorkSchedule.Entities
         public String LastName { get; set; }
 
         [Required(ErrorMessage = "HomePhone is required.")]
-        [RegularExpression(@"[1-9][0-9][0-9][0-9].[[0-9][0-9][0-9].[0-9][0-9][0-9][0-9]")]
+        //[RegularExpression(@"[1-9][0-9][0-9][0-9].[[0-9][0-9][0-9].[0-9][0-9][0-9][0-9]")]
         public String HomePhone { get; set; }
 
         [Required(ErrorMessage = "Active is required.")]
