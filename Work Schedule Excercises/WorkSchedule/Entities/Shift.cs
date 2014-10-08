@@ -14,9 +14,9 @@ namespace WorkSchedule.Entities
         [Required(ErrorMessage = "StartTime is required.")]
         public TimeSpan StartTime { get; set; }
         public TimeSpan? EndTime { get; set; }
-        public Byte? DayOfWeek { get; set; }
-        public Byte? MinEmployees { get; set; }
-        public Byte? MaxEmployees { get; set; }
+        public byte? DayOfWeek { get; set; }
+        public byte? MinEmployees { get; set; }
+        public byte? MaxEmployees { get; set; }
         [Required(ErrorMessage = "LocationID is required.")]
         public int LocationID { get; set; }
 

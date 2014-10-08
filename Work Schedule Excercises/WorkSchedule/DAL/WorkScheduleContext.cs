@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using WorkSchedule.Entities;
 
-namespace WorkSchedule.DLL
+namespace WorkSchedule.DAL
 {
     class WorkScheduleContext : DbContext
     {
