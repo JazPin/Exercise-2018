@@ -16,8 +16,11 @@ namespace WorkSchedule.DAL
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Location> Locations { get; set; }
         public DbSet<EmployeeLocation> EmployeeLocations { get; set; }
+        public DbSet<EmployeeSkill> EmployeeSkills { get; set; }
+        public DbSet<PlacementContact> PlacementContacts { get; set; }
         public DbSet<Shift> Shifts { get; set; }
         public DbSet<Schedule> Schedules { get; set; }
+        public DbSet<Skill> Skills { get; set; }
         #endregion
     }
 }
