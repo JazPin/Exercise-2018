@@ -32,6 +32,7 @@ namespace WorkSchedule.Entities
         //[Required(ErrorMessage = "Active is required.")]
         public bool Active { get; set; }
 
-        public virtual ICollection<EmployeeLocation> EmployeeLocations { get; set; }
+        public virtual ICollection<EmployeeSkill> EmployeeSkills { get; set; }
+        public virtual ICollection<Schedule> Schedules { get; set; }
     }
 }
