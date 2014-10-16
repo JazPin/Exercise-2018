@@ -9,17 +9,27 @@ namespace WorkSchedule.Entities
 {
     public class Shift
     {
+        public Shift()
+        {
+            Active = true;
+        }
         [Key]
         public int ShiftID { get; set; }
+        [Required(ErrorMessage = "PlacementContactID is required.")]
+        public int PlacementContactID { get; set; }
         [Required(ErrorMessage = "StartTime is required.")]
         public TimeSpan StartTime { get; set; }
-        public TimeSpan? EndTime { get; set; }
-        public byte? DayOfWeek { get; set; }
-        public byte? MinEmployees { get; set; }
-        public byte? MaxEmployees { get; set; }
-        [Required(ErrorMessage = "LocationID is required.")]
-        public int LocationID { get; set; }
+        [Required(ErrorMessage = "EndTime is required.")]
+        public TimeSpan EndTime { get; set; }
+        [Required(ErrorMessage = "DayOfWeek is required.")]
+        public byte DayOfWeek { get; set; }
+        [Required(ErrorMessage = "NumberOfEmployees is required.")]
+        public byte NumberOfEmployees { get; set; }
+        public bool Active { get; set; }
+        [StringLength(100, MinimumLength = 1, ErrorMessage = "Note must be between 1 to 100 characters.")]
+        public string Note { get; set; }
 
-        public virtual Location Location { get; set; }
+        public virtual PlacementContact PlacementContact { get; set; }
+        public virtual ICollection<Schedule> Schedules { get; set; }
     }
 }
