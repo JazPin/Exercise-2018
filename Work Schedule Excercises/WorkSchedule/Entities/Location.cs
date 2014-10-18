@@ -33,8 +33,8 @@ namespace WorkSchedule.Entities
         [StringLength(2, MinimumLength = 2, ErrorMessage = "Province must be 2 characters.")]
         public string Province { get; set; }
 
-        [Required(ErrorMessage = "Contact is required.")]
-        [StringLength(50, MinimumLength = 1, ErrorMessage = "Contact must be between 1 to 50 characters.")]
+        
+        [StringLength(50, MinimumLength = 0, ErrorMessage = "Contact must be between 1 to 50 characters.")]
         public string Contact { get; set; }
 
         [Required(ErrorMessage = "PhonePhone is required.")]
