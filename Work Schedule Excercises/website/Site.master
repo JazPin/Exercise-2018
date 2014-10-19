@@ -53,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/">Work Schedule</a>
                 </div>
                 <div class="navbar-collapse collapse">
                    <asp:Menu ID="SiteNav" runat="server" DataSourceID="SiteNavDataSource"
