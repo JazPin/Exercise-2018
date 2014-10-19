@@ -4,7 +4,7 @@
     <h1>Manage Locations</h1>
     <asp:ListView ID="ListView1" runat="server" DataSourceID="LocationODS" InsertItemPosition="FirstItem" DataKeyNames="LocationID">       
         <EditItemTemplate>
-            <tr class="table table-bordered">            
+            <tr class="">            
                 <td>
                     <asp:LinkButton ID="UpdateButton" runat="server" CommandName="Update" Text="Edit" />
                     <asp:LinkButton ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
@@ -98,7 +98,7 @@
             </tr>
         </ItemTemplate>
         <LayoutTemplate>
-            <table runat="server">
+            <table runat="server" class="table table-bordered">
                 <tr runat="server">
                     <td runat="server">
                         <table id="itemPlaceholderContainer" runat="server" border="0" style="">
@@ -117,15 +117,7 @@
                         </table>
                     </td>
                 </tr>
-                <tr runat="server">
-                    <td runat="server" style="">
-                        <asp:DataPager ID="DataPager1" runat="server">
-                            <Fields>
-                                <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True" />
-                            </Fields>
-                        </asp:DataPager>
-                    </td>
-                </tr>
+               
             </table>
         </LayoutTemplate>
              
