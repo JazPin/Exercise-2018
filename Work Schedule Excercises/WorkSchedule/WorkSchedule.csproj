@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\EmployeeSkillDirectoryReport.cs" />
     <Compile Include="BLL\LocationController.cs" />
     <Compile Include="DAL\WorkScheduleContext.cs" />
     <Compile Include="Entities\Employee.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="Entities\EmployeeSkill.cs" />
     <Compile Include="Entities\Location.cs" />
     <Compile Include="Entities\PlacementContact.cs" />
+    <Compile Include="Entities\POCOs\EmployeeSkillDirectory.cs" />
     <Compile Include="Entities\Schedule.cs" />
     <Compile Include="Entities\Shift.cs" />
     <Compile Include="Entities\Skill.cs" />

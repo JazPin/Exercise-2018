@@ -9,6 +9,12 @@ namespace WorkSchedule.Entities
 {
     public class EmployeeSkill
     {
+         public enum SkillLevel
+    {
+        Novice,
+        Proficent,
+        Expert
+    }
         [Key]
         public int EmployeeSkillID { get; set; }
         [Required(ErrorMessage = "Employee ID is required.")]
