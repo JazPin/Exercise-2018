@@ -14,8 +14,10 @@ namespace WorkSchedule.Entities.POCOs
 
         public string Phone { get; set; }
 
-        public int Level { get; set; }
+        public EmployeeSkill.SkillLevel Level { get; set; }
 
-        public int YOE { get; set; }
+        public int? YOE { get; set; }
+
+        
     }
 }
