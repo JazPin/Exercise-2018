@@ -10,11 +10,11 @@ namespace WorkSchedule.Entities
     public class EmployeeSkill
     {
          public enum SkillLevel
-    {
-        Novice,
-        Proficent,
-        Expert
-    }
+        {
+            Novice,
+            Proficent,
+            Expert
+        }
         [Key]
         public int EmployeeSkillID { get; set; }
         [Required(ErrorMessage = "Employee ID is required.")]
@@ -22,8 +22,8 @@ namespace WorkSchedule.Entities
         [Required(ErrorMessage = "Skill ID is required.")]
         public int SkillID { get; set; }
         [Required(ErrorMessage = "Level is required.")]
-        public int Level { get; set; }
-        public int YearOfExperience { get; set; }
+        public SkillLevel Level { get; set; }
+        public int? YearOfExperience { get; set; }
 
         public virtual Skill Skill { get; set; }
         public virtual Employee Employee { get; set; }
