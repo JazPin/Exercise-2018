@@ -24,7 +24,7 @@ namespace WorkSchedule.BLL
                                  Skill = item.Skill.Description,
                                  Name = item.Employee.FirstName + " " + item.Employee.LastName,
                                  Phone = item.Employee.HomePhone,
-                                 Level = item.Level,
+                                 Level = item.Level.ToString(),
                                  YOE = item.YearOfExperience
                              };
                 return result.ToList();
