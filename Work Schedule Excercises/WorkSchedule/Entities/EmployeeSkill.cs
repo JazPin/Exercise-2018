@@ -23,7 +23,7 @@ namespace WorkSchedule.Entities
         public int SkillID { get; set; }
         [Required(ErrorMessage = "Level is required.")]
         public SkillLevel Level { get; set; }
-        public int? YearOfExperience { get; set; }
+        public int? YearsOfExperience { get; set; }
 
         public virtual Skill Skill { get; set; }
         public virtual Employee Employee { get; set; }
